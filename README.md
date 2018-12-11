@@ -1,2 +1,2 @@
 # newTiw.github.io
-基于vue自定义组件
+tiw 官网文档API
