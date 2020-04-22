@@ -1,18 +1,86 @@
 <!--
- * @Author: tiw
- * @Date: 2020-04-22 16:58:56
- * @LastEditTime: 2020-04-22 16:59:30
+ * @Author: Jane
+ * @Date: 2020-04-18 21:10:13
+ * @LastEditTime: 2020-04-21 17:18:00
  * @LastEditors: Please set LastEditors
  * @Description: 
  -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>hell 桢屁屁</h1>
-</body>
-</html>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="./index.css" type="text/css" rel="stylesheet">
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+   <title>Document</title>
+ </head>
+ <script>
+   window.onload = function() {
+    var offWidth = window.screen.width;    // 获取设备宽度
+  //  通常把设计稿按照1rem =100px设置，好换算，假设设计稿宽度为移动端的375px，换算如下：
+    var remvp = offWidth * (100 / 1284)
+     document.getElementsByTagName("html")[0].style.fontSize = remvp + 'px';         //把转换的值赋值给顶级标签html的font-size属性（即1rem的标准参考物）
+   }
+ </script>
+ <body>
+   <section class="main">
+    <section class="floor floor_one">
+      <!-- 导航 -->
+      <div class="nav_top">
+        <ul class="nav_menu">
+          <li class="logo"></li>
+          <li class="menu_item">Footwear</li>
+          <li class="menu_item">Clothing</li>
+          <li class="menu_item">Accessories</li>
+          <li class="menu_item">Brands</li>
+          <li class="menu_item">Exclusive</li>
+        </ul>
+        <ul class="nav_menu">
+          <li class="menu_item">
+            <img class="image" src="./static/image/seek.png"/>
+            Search
+          </li>
+          <li class="menu_item">
+            <img class="image" src="./static/image/shopping.png"/>
+            Cart
+            <span class="highlight">(2)</span>
+          </li>
+          <li class="menu_item">
+            <img class="image" src="./static/image/user.png"/>
+            Sign in
+          </li>
+        </ul>
+      </div>
+      <!-- 导航end -->
+      <div class="product">
+        <img class="goods" src="./static/image/goods.png"/>
+      </div>
+      <div class="text_info">
+          <p class="text brand_text">Nike</p>
+          <p class="text title_text">AIR MAX TAVAS SD</p>
+          <p class="text price_text">$ 160.00</p>
+          <p class="text slogen_text">
+            Colors - <span class="text colour_text">
+              Black/Pink Pow/Tour Yellow/White 
+            </span>
+          </p>
+          <div class="option_info">
+            <div class="option">
+              <img class="shoes" src="./static/image/shoes_1.png"/>
+            </div>
+            <div class="option">
+              <img class="shoes" src="./static/image/shoes_2.png"/>
+            </div>
+          </div>
+          <p class="text charts">Size charts</p>
+          <div class="size_info">
+            <div class="size"></div>
+            <div class="size btn"></div>
+          </div>
+      </div>
+    </section>
+    <section class="floor"></section>
+   </section>
+
+ </body>
+ </html>

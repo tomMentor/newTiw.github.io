@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 100px; */
+}
+.main .floor{
+ width: 100vw;
+ height: 100vh;
+}
+.main .floor_one {
+  position: relative;
+  padding: 0 1.2rem;
+}
+
+.main .floor .nav_top {
+  width: 100%;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  /* 版面内容对齐 分布 排列方式 X轴对齐*/
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: nav 1s;
+}
+@keyframes nav {
+  0% {transform: translate3d(0, -100%, 0);}
+  100% {transform: translate3d(0, 0, 0);}
+}
+@-webkit-keyframes nav {
+  0% {transform: translate3d(0, -100%, 0);}
+  100% {transform: translate3d(0, 0, 0);}
+}
+.logo, .menu_item {
+  /* list列表 style风格 type类型 */
+  list-style-type: none;
+  /* cursor光标 pointer指针(抓手)*/
+  cursor: pointer;
+  /* 效果过渡 */
+  transition: all 0.3s;
+}
+
+.main .floor .nav_top .nav_menu {
+  display: -webkit-flex;
+  display: -moz-flex;
+   /* 弹性盒子容器 */
+   display: flex;
+  /* 纵向对齐 Y轴对齐方式 */
+  -webkit-align-items:center;
+  -moz-align-items:center;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.main .floor .nav_top .nav_menu .menu_item {
+  padding:0 0.2rem;
+  color: #333333;
+  font-weight: bold;
+  display: flex;
+  -webkit-align-items:center;
+  -moz-align-items:center;
+  align-items: center;
+  font-size: 0.14rem;
+}
+/* hover悬停 */
+.main .floor .nav_top .nav_menu .menu_item:hover {
+  color: #0089CF;
+}
+.main .floor .nav_top .nav_menu .logo {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #0089CF;
+} 
+.main .floor .nav_top .nav_menu .logo:hover {
+  border-radius: 100%;
+}
+.nav_menu .menu_item .image {
+  width: 0.16rem;
+  height: 0.16rem;
+  /* color: #0089CF; */
+  margin: 0 0.1rem;
+}
+.nav_menu .menu_item .highlight {
+  color: #0089CF;
+}
+.floor_one {
+  display: -webkit-flex;
+  display: -mos-flex;
+  display: flex;
+  -webkit-align-items:center;
+  -moz-align-items:center;
+  align-items: center;
+}
+.product .goods {
+  width: 6.4rem;
+  height: 2.96rem;
+  animation: go 1s;
+  /* background: #ededed; */
+  /* display: -webkit-flex;
+  display: -moz-flex;
+  display: flex; */
+}
+@keyframes go {
+  0% {transform: translate3d(-120%, 0, 0);}
+  100% {transform: translate3d(0, 0, 0);}
+}
+@-webkit-keyframes go {
+  0% {transform: translate3d(-120%, 0, 0);}
+  100% {transform: translate3d(0, 0, 0);}
+}
+.text_info {
+  padding-left: 0.9rem;
+  animation: text 2s;
+}
+@keyframes text {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes text {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.text_info .text{
+  font-size: 0.12rem;
+  color: #666666;
+  font-weight: bold;
+}
+.text_info .brand_text {
+  font-size: 0.25rem;
+  color: #333333;
+}
+.text_info .title_text {
+  font-size: 0.35rem;
+  color: #333333;
+}
+.text_info .price_text {
+  font-size: 0.18rem;
+  color: #666666;
+}
+.text_info .slogen_text {
+  font-size: 0.14rem;
+  color: #666666;
+  padding: 14px 0;
+}
+.text_info .colour_text {
+  color: #0089CF;
+}
+.text_info .option_info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}
+.text_info .option_info .option .shoes{
+  width: 0.8rem;
+  height: 0.8rem;
+  /* background: #ededed; */
+  margin-right: 0.1rem;
+}
+.text_info .charts {
+  padding: 16px 0;
+}
+.text_info .size_info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}
+.text_info .size_info .size{
+  width: 1.25rem;
+  height: 0.5rem;
+  border: #999999 1px solid;
+  margin-right: 0.1rem;
+}
+.text_info .size_info .btn {
+  background: #000000;
+}
